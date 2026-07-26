@@ -1245,3 +1245,260 @@ transition:.3s;
 transform:scale(1.1);
 
 }
+/* ==========================================
+   MOBILE RESPONSIVE DESIGN
+========================================== */
+
+
+@media(max-width:900px){
+
+
+/* HEADER */
+
+header{
+
+padding:0 20px;
+
+}
+
+
+.menu-btn{
+
+display:block;
+
+color:#12213a;
+
+}
+
+
+nav{
+
+position:absolute;
+
+top:90px;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:30px 0;
+
+gap:20px;
+
+transform:translateY(-120%);
+
+transition:.4s;
+
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+}
+
+
+nav.active{
+
+transform:translateY(0);
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+min-height:auto;
+
+padding:100px 20px;
+
+}
+
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+
+.hero p{
+
+font-size:16px;
+
+}
+
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+
+.hero-cards{
+
+flex-direction:column;
+
+}
+
+
+
+/* TRUST BAR */
+
+
+.trust-bar{
+
+grid-template-columns:1fr;
+
+padding:30px 20px;
+
+}
+
+
+
+/* CONTAINERS */
+
+
+.container{
+
+width:100%;
+
+}
+
+
+
+/* ABOUT */
+
+
+.about-preview .container{
+
+display:flex;
+
+flex-direction:column;
+
+gap:30px;
+
+}
+
+
+
+/* SERVICE GRID */
+
+
+.service-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+/* WHY GRID */
+
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+/* MISSION */
+
+
+.mission-box{
+
+flex-direction:column;
+
+}
+
+
+
+/* VALUES */
+
+
+.value-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+/* MEMBERSHIPS */
+
+
+.membership-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+/* LEADERSHIP */
+
+
+.leader{
+
+flex-direction:column;
+
+}
+
+
+
+/* STATS */
+
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+/* TESTIMONIALS */
+
+
+.testimonial-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+/* CONTACT */
+
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+/* FOOTER */
+
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+}
