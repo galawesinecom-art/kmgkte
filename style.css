@@ -1,1 +1,247 @@
+/* ==========================================
+   KMG KOPELA TRADING ENTERPRISE
+   Premium Corporate Website
+========================================== */
 
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#071A35;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(7,26,53,.85);
+    backdrop-filter:blur(15px);
+    z-index:1000;
+}
+
+.logo h2{
+    color:#D4AF37;
+    font-size:28px;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#fff;
+    transition:.3s;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#D4AF37;
+}
+
+.btn{
+    text-decoration:none;
+    background:#D4AF37;
+    color:#071A35;
+    padding:12px 28px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 8%;
+    background:
+    linear-gradient(rgba(7,26,53,.85),rgba(7,26,53,.9)),
+    url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:20px;
+    color:#ddd;
+    margin-bottom:40px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary-btn{
+    background:#D4AF37;
+    color:#071A35;
+}
+
+.secondary-btn{
+    border:2px solid white;
+    color:white;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover{
+    transform:translateY(-5px);
+}
+
+/* Sections */
+
+section{
+    padding:100px 8%;
+}
+
+.services h2,
+.stats h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* Stats */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    text-align:center;
+}
+
+.stats div{
+    background:rgba(255,255,255,.05);
+    padding:40px;
+    border-radius:20px;
+}
+
+.stats h2{
+    color:#D4AF37;
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#031122;
+    text-align:center;
+    padding:50px 8%;
+}
+
+footer h2{
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+footer p{
+    color:#bbb;
+    margin:10px 0;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
